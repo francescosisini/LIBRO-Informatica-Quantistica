@@ -95,17 +95,34 @@ int main()
 
   a=1;b=0;c=0;d=1;
   psi2 = crea_ket2(a,b,c,d,base_std2);
-
-   o2 = crea_tensore2_2(
-                             1,0,0,0,
-                             0,1,0,0,
-                             0,0,0,1,
-                             0,0,1,0,
-                             base_std2_2);
-   psip2 = trasforma_ket2(o2,psi2);
-
-   printf("Operatore CNOT:\n");
+  
+  o2 = crea_tensore2_2(
+                       1,0,0,0,
+                       0,1,0,0,
+                       0,0,0,1,
+                       0,0,1,0,
+                       base_std2_2);
+  psip2 = trasforma_ket2(o2,psi2);
+  
+  printf("Operatore CNOT:\n");
   printf("%g+i%g,%g+i%g,%g+i%g,%g+i%g -> ",psi2.x11, psi2.x12,psi2.x21, psi2.x22);
   printf("%g+i%g,%g+i%g,%g+i%g,%g+i%g\n",psip2.x11, psip2.x12,psip2.x21, psip2.x22);
+  
+  
+  a=0;b=1;c=0;d=1;
+  psi2 = crea_ket2(a,b,c,d,base_std2);
+  
+  o2 = crea_tensore2_2(
+                       1,0,0,0,
+                       0,1,0,0,
+                       0,0,0,1,
+                       0,0,1,0,
+                       base_std2_2);
+  psip2 = trasforma_ket2(o2,psi2);
+  
+  printf("Operatore CNOT:\n");
+  printf("%g+i%g,%g+i%g,%g+i%g,%g+i%g -> ",psi2.x11, psi2.x12,psi2.x21, psi2.x22);
+  printf("%g+i%g,%g+i%g,%g+i%g,%g+i%g\n",psip2.x11, psip2.x12,psip2.x21, psip2.x22);
+  
   
 }

@@ -188,6 +188,164 @@ typedef struct
   base2_2 b;
 } op2_2;
 
+
+/*____________________TRIPLO QUBIT__________________*/
+
+/*___________________________________________________
+ *
+ * Elemento  eee in V(x)V(x)V
+ */
+typedef struct
+{
+  double complex c[8];
+} elemento3;
+
+/*___________________________________________________
+ *
+ * Base 3 qubits
+ */
+typedef struct
+{
+  elemento2 e1f1g1; //000
+  elemento2 e1f1g2; //001
+  elemento2 e1f2g1; //010
+  elemento2 e1f2g2; //011
+  elemento2 e2f1g1; //100
+  elemento2 e2f1g2; //101
+  elemento2 e2f2g1; //110
+  elemento2 e2f2g2; //111
+  
+} base3;
+
+/*___________________________________________________
+ *
+ * Un ket di 3 qubit di ampiezze complesse x1 e y1
+ * , x2, y2 e x3, y3  sulla base b
+ *
+ */
+typedef struct
+{
+  double complex x111,x112,x121,x122,x211,x212,x221,x222;
+  base3 b;
+} ket3;
+
+/*___________DOPERATORE TENSORIALE_3X3_____________*/
+
+/*___________________________________________________
+ *
+ * Elemento  efe*f* in V(x)V(x)V*(x)V*
+ */
+typedef struct
+{
+  double complex c[8][8];
+} elemento3_3;
+
+/*___________________________________________________
+ *
+ * Base tensoori V@V@V@V*@V*@V*
+ */
+typedef struct
+{
+  //-riga 1
+  elemento3_3 e1f1g1e_1f_1g_1;
+  elemento3_3 e1f1g1e_1f_1g_2;
+  elemento3_3 e1f1g1e_1f_2g_1;
+  elemento3_3 e1f1g1e_1f_2g_2;
+  elemento3_3 e1f1g1e_2f_1g_1;
+  elemento3_3 e1f1g1e_2f_1g_2;
+  elemento3_3 e1f1g1e_2f_2g_1;
+  elemento3_3 e1f1g1e_2f_2g_2;
+   //-riga 2
+  elemento3_3 e1f1g2e_1f_1g_1;
+  elemento3_3 e1f1g2e_1f_1g_2;
+  elemento3_3 e1f1g2e_1f_2g_1;
+  elemento3_3 e1f1g2e_1f_2g_2;
+  elemento3_3 e1f1g2e_2f_1g_1;
+  elemento3_3 e1f1g2e_2f_1g_2;
+  elemento3_3 e1f1g2e_2f_2g_1;
+  elemento3_3 e1f1g2e_2f_2g_2;
+   //-riga 3
+  elemento3_3 e1f2g1e_1f_1g_1;
+  elemento3_3 e1f2g1e_1f_1g_2;
+  elemento3_3 e1f2g1e_1f_2g_1;
+  elemento3_3 e1f2g1e_1f_2g_2;
+  elemento3_3 e1f2g1e_2f_1g_1;
+  elemento3_3 e1f2g1e_2f_1g_2;
+  elemento3_3 e1f2g1e_2f_2g_1;
+  elemento3_3 e1f2g1e_2f_2g_2;
+   //-riga 4
+  elemento3_3 e1f2g2e_1f_1g_1;
+  elemento3_3 e1f2g2e_1f_1g_2;
+  elemento3_3 e1f2g2e_1f_2g_1;
+  elemento3_3 e1f2g2e_1f_2g_2;
+  elemento3_3 e1f2g2e_2f_1g_1;
+  elemento3_3 e1f2g2e_2f_1g_2;
+  elemento3_3 e1f2g2e_2f_2g_1;
+  elemento3_3 e1f2g2e_2f_2g_2; 
+
+  //-riga 1
+  elemento3_3 e2f1g1e_1f_1g_1;
+  elemento3_3 e2f1g1e_1f_1g_2;
+  elemento3_3 e2f1g1e_1f_2g_1;
+  elemento3_3 e2f1g1e_1f_2g_2;
+  elemento3_3 e2f1g1e_2f_1g_1;
+  elemento3_3 e2f1g1e_2f_1g_2;
+  elemento3_3 e2f1g1e_2f_2g_1;
+  elemento3_3 e2f1g1e_2f_2g_2;
+   //-riga 2
+  elemento3_3 e2f1g2e_1f_1g_1;
+  elemento3_3 e2f1g2e_1f_1g_2;
+  elemento3_3 e2f1g2e_1f_2g_1;
+  elemento3_3 e2f1g2e_1f_2g_2;
+  elemento3_3 e2f1g2e_2f_1g_1;
+  elemento3_3 e2f1g2e_2f_1g_2;
+  elemento3_3 e2f1g2e_2f_2g_1;
+  elemento3_3 e2f1g2e_2f_2g_2;
+   //-riga 3
+  elemento3_3 e2f2g1e_1f_1g_1;
+  elemento3_3 e2f2g1e_1f_1g_2;
+  elemento3_3 e2f2g1e_1f_2g_1;
+  elemento3_3 e2f2g1e_1f_2g_2;
+  elemento3_3 e2f2g1e_2f_1g_1;
+  elemento3_3 e2f2g1e_2f_1g_2;
+  elemento3_3 e2f2g1e_2f_2g_1;
+  elemento3_3 e2f2g1e_2f_2g_2;
+   //-riga 4
+  elemento3_3 e2f2g2e_1f_1g_1;
+  elemento3_3 e2f2g2e_1f_1g_2;
+  elemento3_3 e2f2g2e_1f_2g_1;
+  elemento3_3 e2f2g2e_1f_2g_2;
+  elemento3_3 e2f2g2e_2f_1g_1;
+  elemento3_3 e2f2g2e_2f_1g_2;
+  elemento3_3 e2f2g2e_2f_2g_1;
+  elemento3_3 e2f2g2e_2f_2g_2;
+  
+} base3_3;
+
+/*___________________________________________________
+ *
+ * Un operatore sullo spazio 111
+ * di componenti a11, a12,...,a88 sull base b
+ *
+ */
+typedef struct
+{
+  double complex
+  a11,a12,a13,a14,a15,a16,a17,a18,
+    a21,a22,a23,a24,a25,a26,a27,a28,
+    a31,a32,a33,a34,a35,a36,a37,a38,
+    a41,a42,a43,a44,a45,a46,a47,a48,
+    a51,a52,a53,a54,a55,a56,a57,a58,
+    a61,a62,a63,a64,a65,a66,a67,a68,
+    a71,a72,a73,a74,a75,a76,a77,a78,
+    a81,a82,a83,a84,a85,a86,a87,a88;
+  base3_3 b;
+} op3_3;
+
+
+
+/*_____________Funzioni______________________________*/
+
 /*____________________________________________________
  *
  * crea un ket di stato di ampiezze complesse
@@ -206,6 +364,19 @@ crea_ket1(double complex x, double complex y, base1 b);
 ket2
 crea_ket2(double complex x1, double complex y1,
           double complex x2, double complex y2,base2 b);
+
+/*____________________________________________________
+ *
+ * crea un ket di stato di tre qubits ampiezze complesse
+ */
+ket3
+crea_ket3(double complex x1, double complex y1,
+          double complex x2, double complex y2,
+          double complex x3, double complex y3,
+          base2 b);
+
+
+
 
 /*____________________________________________________
  *
@@ -230,12 +401,49 @@ op2_2 crea_tensore2_2
 
 /*____________________________________________________
  *
+ * crea un operatore (tensore 3_3) di coefficienti
+ * complessi a11, a12,...,a44 sulla base b
+ */
+op3_3 crea_tensore3_3
+(double complex a11,double complex a12,double complex a13,double complex a14,
+ double complex a15,double complex a16,double complex a17,double complex a18,
+
+ double complex a21,double complex a22,double complex a23,double complex a24,
+ double complex a25,double complex a26,double complex a27,double complex a28,
+
+ double complex a31,double complex a32,double complex a33,double complex a34,
+ double complex a35,double complex a36,double complex a37,double complex a38,
+
+ double complex a41,double complex a42,double complex a43,double complex a44,
+ double complex a45,double complex a46,double complex a47,double complex a48,
+
+ double complex a51,double complex a52,double complex a53,double complex a54,
+ double complex a55,double complex a56,double complex a57,double complex a58,
+
+ double complex a61,double complex a62,double complex a63,double complex a64,
+ double complex a65,double complex a66,double complex a67,double complex a68,
+ 
+ double complex a71,double complex a72,double complex a73,double complex a74,
+ double complex a75,double complex a76,double complex a77,double complex a78,
+
+ double complex a81,double complex a82,double complex a83,double complex a84,
+ double complex a85,double complex a86,double complex a87,double complex a88,
+ 
+ base3_3 b
+ );
+
+
+
+/*____________________________________________________
+ *
  * Trasforma un ket tramite un operatore
  * 
  */
 ket1 trasforma_ket1(op1_1 o,ket1 ket);
 
 ket2 trasforma_ket2(op2_2 o,ket2 ket);
+
+ket2 trasforma_ket3(op3_3 o,ket3 ket);
   
 #endif
 
