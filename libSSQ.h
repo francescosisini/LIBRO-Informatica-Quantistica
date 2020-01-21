@@ -206,14 +206,14 @@ typedef struct
  */
 typedef struct
 {
-  elemento2 e1f1g1; //000
-  elemento2 e1f1g2; //001
-  elemento2 e1f2g1; //010
-  elemento2 e1f2g2; //011
-  elemento2 e2f1g1; //100
-  elemento2 e2f1g2; //101
-  elemento2 e2f2g1; //110
-  elemento2 e2f2g2; //111
+  elemento3 e1f1g1; //000
+  elemento3 e1f1g2; //001
+  elemento3 e1f2g1; //010
+  elemento3 e1f2g2; //011
+  elemento3 e2f1g1; //100
+  elemento3 e2f1g2; //101
+  elemento3 e2f2g1; //110
+  elemento3 e2f2g2; //111
   
 } base3;
 
@@ -373,7 +373,7 @@ ket3
 crea_ket3(double complex x1, double complex y1,
           double complex x2, double complex y2,
           double complex x3, double complex y3,
-          base2 b);
+          base3 b);
 
 
 
@@ -443,7 +443,7 @@ ket1 trasforma_ket1(op1_1 o,ket1 ket);
 
 ket2 trasforma_ket2(op2_2 o,ket2 ket);
 
-ket2 trasforma_ket3(op3_3 o,ket3 ket);
+ket3 trasforma_ket3(op3_3 o,ket3 ket);
   
 #endif
 
