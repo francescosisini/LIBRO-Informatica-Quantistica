@@ -1018,41 +1018,7 @@ ket1 trasforma_ket1(op1_1 o,ket1 ket)
             ketp.y += v[1]*a[i][j]*x[k];
           }
       }
-  /*
-  //Ket è la somma dei due vettori di base e1 ed e2
-  // oe1 --------------------------------------------
-  matrice_x_vettore2(v,o.b.e1e_1,ket.b.e1);
-  ketp.x = v[0]*o.a11*ket.x;
-  ketp.y = v[1]*o.a11*ket.x;
-  //--
-  matrice_x_vettore2(v,o.b.e1e_2,ket.b.e1);
-  ketp.x += v[0]*o.a12*ket.x;
-  ketp.y += v[1]*o.a12*ket.x;
-  //--
-  matrice_x_vettore2(v,o.b.e2e_1,ket.b.e1);
-  ketp.x += v[0]*o.a21*ket.x;
-  ketp.y += v[1]*o.a21*ket.x;
-  //--
-  matrice_x_vettore2(v,o.b.e2e_2,ket.b.e1);
-  ketp.x += v[0]*o.a22*ket.x;
-  ketp.y += v[1]*o.a22*ket.x;
-  // oe2 ---------------------------------------------
-  matrice_x_vettore2(v,o.b.e1e_1,ket.b.e2);
-  ketp.x += v[0]*o.a11*ket.y;
-  ketp.y += v[1]*o.a11*ket.y;
-  //--
-  matrice_x_vettore2(v,o.b.e1e_2,ket.b.e2);
-  ketp.x += v[0]*o.a12*ket.y;
-  ketp.y += v[1]*o.a12*ket.y;
-  //--
-  matrice_x_vettore2(v,o.b.e2e_1,ket.b.e2);
-  ketp.x += v[0]*o.a21*ket.y;
-  ketp.y += v[1]*o.a21*ket.y;
-  //--
-  matrice_x_vettore2(v,o.b.e2e_2,ket.b.e2);
-  ketp.x += v[0]*o.a22*ket.y;
-  ketp.y += v[1]*o.a22*ket.y;
-  */
+  ketp.b = ket.b;
   return ketp;
 }
 
@@ -1091,8 +1057,8 @@ ket2 trasforma_ket2(op2_2 o,ket2 ket)
             ketp.x22 += v[3]*a[i][j]*x[k];
           }
       }
- 
-  return ketp;
+   ketp.b = ket.b;
+   return ketp;
 }
 
 ket3 trasforma_ket3(op3_3 o,ket3 ket)
@@ -1230,10 +1196,10 @@ ket3 trasforma_ket3(op3_3 o,ket3 ket)
             ketp.x221 += v[6]*a[i][j]*x[k];
             ketp.x222 += v[7]*a[i][j]*x[k];
           }
-                       
+        
       }
- 
-  return ketp;
+   ketp.b = ket.b;
+   return ketp;
 }
 
 
