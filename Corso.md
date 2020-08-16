@@ -2,9 +2,10 @@
 Docente **Francesco Sisini**
 
 ## MODULO 0: INTRODUZIONE
-- Mondo classico e mondo quantistico: la doppia fenditura
-- Simulare la fisica sul computer: si può fare Mr. Feynman?
-- Dai bits classici ai qubits quantistici
+- LEZIONE UNICA: Mondi a confronto
+  - Mondo classico e mondo quantistico: la doppia fenditura
+  - Simulare la fisica sul computer: si può fare Mr. Feynman?
+  - Dai bits classici ai qubits quantistici
 
 ## MODULO 1: Basi
 - LEZIONE 1: Qbits
