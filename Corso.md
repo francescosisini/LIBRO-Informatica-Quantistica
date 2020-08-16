@@ -1,4 +1,4 @@
-# Informatica quantistica: le basi
+# Bit quantistici: corso base di informatica quantistica
 Docente **Francesco Sisini**
 
 ## MODULO 0: INTRODUZIONE
