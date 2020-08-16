@@ -1,4 +1,4 @@
-# Corso: Basi di informatica e computazione quantistica
+# Informatica quantistica: le basi
 Docente **Francesco Sisini**
 
 ## MODULO 0: INTRODUZIONE
