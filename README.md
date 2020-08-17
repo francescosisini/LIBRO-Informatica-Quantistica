@@ -1,4 +1,4 @@
-# LIBRO-Informatica-Quantistica
+# Informatica Quantistica, introduzione con esempi in linguaggio C
 Il libro è disponibile su [Amazon](https://www.amazon.it/Informatica-Quantistica-introduzione-esempi-linguaggio/dp/B0858VQZ17)
 
 E' disponibile un [estratto](estratto.pdf) 
