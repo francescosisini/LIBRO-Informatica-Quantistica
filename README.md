@@ -1,6 +1,6 @@
 # Informatica Quantistica, introduzione con esempi in linguaggio C
 
-Questo repository fa riferimento al libro **Informatica Quantistica, introduzione con esempi in linguaggio C**"** di **Francesco e Valentina Sisini**
+Questo repository fa riferimento al libro **Informatica Quantistica, introduzione con esempi in linguaggio C** di **Francesco e Valentina Sisini**
 
 Il libro è disponibile* su [Amazon](https://www.amazon.it/Informatica-Quantistica-introduzione-esempi-linguaggio/dp/B0858VQZ17)
 
