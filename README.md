@@ -2,7 +2,7 @@
 
 Questo repository fa riferimento al libro **Informatica Quantistica, introduzione con esempi in linguaggio C** di **Francesco e Valentina Sisini**
 
-Il libro è disponibile* su [Amazon](https://www.amazon.it/Informatica-Quantistica-introduzione-esempi-linguaggio/dp/B0858VQZ17)
+Il libro è disponibile su [Amazon](https://www.amazon.it/Informatica-Quantistica-introduzione-esempi-linguaggio/dp/B0858VQZ17)
 
 Dettagli ed estratti del libro si trovano nella directory `book`.
 
@@ -14,7 +14,7 @@ Le seguenti istruzioni sono state testate su un sistema **Linux Ubuntu 18.04** e
 
 ## Compilazione degli esempi
 
-I programmi di esempio sono tutti basati sul componente `libSSQ`.
+I programmi di esempio sono tutti basati sul componente `libSSQ` ad eccezione di `pi` che serve solo da tester per `complex`.
 
 - pi
 - main1
