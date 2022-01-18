@@ -1,21 +1,7 @@
 /************************************************************************
- *
- * libSSQ @2020 Scuola Sisini
- * Licenza GPL3 
- * 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
+  libSSQ @2020 Scuola Sisini
+  SPDX-License-Identifier: GPL-3.0-or-later
+ ***********************************************************************/
 
 #pragma once
 #ifndef LIBSSQ_H
@@ -117,8 +103,6 @@ typedef struct
   elemento2 e1f2; //01
   elemento2 e2f1; //10
   elemento2 e2f2; //11
-  
-
 } base2;
 
 /*___________________________________________________
@@ -214,7 +198,6 @@ typedef struct
   elemento3 e2f1g2; //101
   elemento3 e2f2g1; //110
   elemento3 e2f2g2; //111
-  
 } base3;
 
 /*___________________________________________________
