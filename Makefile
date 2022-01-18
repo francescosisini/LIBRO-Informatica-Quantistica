@@ -5,7 +5,9 @@
 #************************************************************************
 
 CC = gcc
-CFLAGS = -fPIC -Wall -Wextra -O2 -g -std=c99
+CFLAGS = -fPIC -Wextra -O2 -g -std=c99 -Wformat=0
+#Add -Wall, and remove -Wformat=0 in CFLAGS if you need more warnings
+
 LIBS=-lm
 
 OUTPUTSSQ=libSSQ
