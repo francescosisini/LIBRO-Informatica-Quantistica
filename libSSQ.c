@@ -1,21 +1,7 @@
 /************************************************************************
- *
- * libSSQ @2020 Scuola Sisini
- * Licenza GPL3 
- * 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
+  libSSQ @2020 Scuola Sisini
+  SPDX-License-Identifier: GPL-3.0-or-later
+ ***********************************************************************/
 
 #include <complex.h>
 #include <stdio.h>
@@ -1078,7 +1064,8 @@ ket3 trasforma_ket3(op3_3 o,ket3 ket)
     ket.b.e2f1g1,
     ket.b.e2f1g2,
     ket.b.e2f2g1,
-    ket.b.e2f2g2};
+    ket.b.e2f2g2
+    };
   
   elemento3_3 ee_[8][8] = {
     o.b.e1f1g1e_1f_1g_1,
@@ -1154,7 +1141,7 @@ ket3 trasforma_ket3(op3_3 o,ket3 ket)
     o.b.e2f2g2e_2f_1g_2,
     o.b.e2f2g2e_2f_2g_1,
     o.b.e2f2g2e_2f_2g_2,
-      };
+    };
 
   double complex x[8] =  {
     ket.x111,

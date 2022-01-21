@@ -1,7 +1,51 @@
 # Informatica Quantistica, introduzione con esempi in linguaggio C
+
+Questo repository fa riferimento al libro **Informatica Quantistica, introduzione con esempi in linguaggio C** di **Francesco e Valentina Sisini**
+
 Il libro è disponibile su [Amazon](https://www.amazon.it/Informatica-Quantistica-introduzione-esempi-linguaggio/dp/B0858VQZ17)
 
-E' disponibile un [estratto](estratto.pdf) 
+Dettagli ed estratti del libro si trovano nella directory `book`.
 
-I computer quantistici si stanno affacciando sul panorama tecnologico e presto saranno disponibili sul mercato. Il loro principio di funzionamento è molto complesso perché si basa sulla meccanica quantistica, scienza di cuial momento non vengono insegnati i fondamenti né alle scuole superiori né nei corsi universitari che non sianospecialistici come Fisica o AstronomiaLa situazione è molto simile a quella che si delineò alla fine degli anni '50, quando chi non aveva le basi di elettronica non poteva in alcun modo ambire a comprendere il funzionamento di un calcolatore elettronico. Sebbene la conoscenza dell'elettronica sia fondamentale ancora oggi per chi voglia fare dell'informatica la propriaprofessione, è vero che è possibile programmare un computer anche senza conoscere questa disciplinaIn questo libro, l'autore estrapola dalla meccanica quantistica solo i principi base necessari per la comprensionedel nuovo paradigma di programmazione. Il risultato è l'apertura della possibilità di comprendere le basi della programmazione di algoritmi quantistici anche a chi non ha studiato FisicaPer ogni argomento trattato il libro propone i relativi esercizi di computazione quantistica. Dal momento che i computer quantistici non sono ancora diffusi, nel testo vengono presentati degli esercizi scritti in il linguaggio C, usando i quali è possibile mettere in pratica i concetti appresi. Gli autoriFrancesco Sisini è laureato in fisica, ha un master in Fisica nucleare e un dottorato di ricerca in tecniche radioisotopiche. Hainiziato a seguire il mondo informatico dalle scuole medie e si occupa attivamente di didattica e formazione aziendale nel campo del Machine Learning e delle reti neurali. E' primo autore di diversi pubblicazioni su riviste scientifiche internazionaliValentina Sisini è studentessa di informatica. E' responsabile dei prodotti di Scuola Sisini.
-![image](copQuant_mezza_nera.jpg)
+---
+
+# Istruzioni d'uso
+
+Le seguenti istruzioni sono state testate su un sistema **Linux Ubuntu 18.04** e **gcc 7.5.0**
+
+## Compilazione degli esempi
+
+I programmi di esempio sono tutti basati sul componente `libSSQ` ad eccezione di `pi` che serve solo da tester per `complex`.
+
+- pi
+- main1
+- esercizio_1
+- esercizio_2
+- esercizio_3
+
+Vengono compilati con il comando `make`
+
+```bash
+$ make
+```
+
+## Utilizzo degli esempi
+
+Eseguire i programmi. Ad esempio...
+
+```bash
+$ ./pi
+-1.000000 + 0.000000 * i
+```
+
+oppure
+
+```bash
+$ ./esercizio_1
+_____QUBIT SINGOLO____
+
+Operatore sigma_x:
+1+i0,0+i0 -> 0+i0,1+i0
+```
+
+# Licenza
+ Tutto il software è rilasciato in **licenza GPLv3** 
